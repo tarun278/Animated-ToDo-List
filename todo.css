@@ -1,0 +1,315 @@
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  
+}
+h1{
+    background:#2980b9;
+    padding: 10px 20px;
+    text-transform:uppercase;
+    font-size:24px;
+    font-weight:15px;
+    margin-bottom:0;
+    color:rgba(255, 255, 255, 1);
+}
+#container{
+
+   background-color:#f7f7f7;
+   margin:100px auto;
+   width:360px;
+   box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+   0 0  0 2px rgb(255,255,255),
+   0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.selected {
+    color:gray;
+    text-decoration:line-through;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+li{
+    background-color:#fff;
+    line-height:30px;
+    padding:10px 10px;
+    color:#666;
+}
+li:nth-child(2n){
+ background:#f7f7f7;
+}
+input{
+    padding:13px 13px 13px 20px;
+    width:100%;
+    box-sizing: border-box;
+    color:#2980b9;
+    font-size:18px;
+    background-color:#f7f7f7;
+    border:3px solid rgba(0,0,0,0);
+    
+}
+input:focus{
+     background:#fff;
+     border:3px solid #2980b9;
+     outline: none;
+}
+#pen{
+   float:right;
+}
+span{
+    background:#e74c3c;
+    height:40px;
+    margin-right:20px;
+    text-align:center;
+    color:white;
+    width:0;
+    display:inline-block;
+    transition:0.2s linear;
+    opacity:0;
+}
+li:hover span{
+    width:40px;
+    opacity:1.0;
+}
+
+
+#background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* the animation part */
+
+.a1 {
+    -webkit-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 10s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.a2 {
+    -webkit-animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.a3 {
+    -webkit-animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	animation: animateBubble 13s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.a4 {
+    -webkit-animation: animateBubble 8s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 8s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 8s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.a5 {
+    -webkit-animation: animateBubble 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 11s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.a6 {
+    -webkit-animation: animateBubble 14s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 14s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	animation: animateBubble 14s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.a7 {
+    -webkit-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+.a8 {
+    -webkit-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.a9 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.a10 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+
+
+/*objects related to animation part*/
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
